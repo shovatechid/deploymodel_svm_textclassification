@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Home</title>
+    <link rel="icon" href="../static/assets/logo1.png" type="image/x-icon">
+    <link rel="stylesheet" type="text/css" href="../static/css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="../static/css/bootstrap.min.css">
+</head>
+
+<body style="background-color: lightgray;">
+    <div class="col-md-12" style="margin-top: 0.5cm;">
+        <center>
+            <img src="../static/assets/logo2.png" width="20%" style="margin-bottom: 0.5cm;">
+            <h4>Sistem Prediksi Berita Palsu Support Vector Machine</h4>
+        </center>
+    </div>
+    <div class="col-md-12" style="margin-top: 1cm;">
+        <form action="{{url_for('result')}}" method="POST">
+            <div class="form-group">
+                <center><label for="textArea_title">Deteksi Berita Palsu Pemilu 2024</label></center>
+                <textarea class="form-control" id="textArea_title" rows="5" style="margin-bottom: 0.5cm;" name="message"></textarea>
+                <button type="submit" class="btn btn-primary btn-lg btn-block">Cek Fakta</button>
+            </div>
+        </form>
+    </div>
+</body>
+
+<footer class="footer">
+    <center>
+        <p><b>Shova Tech Engineering</b< /p>
+    </center>
+</footer>
+
+</html>
